@@ -14,7 +14,7 @@ def findMinimumIndex(lst, start):
     return lst[start:].index(min(lst[start:])) + start
 
 
-def naiveSelectionSort(lst):
+def selectionSort(lst):
 
     """
     Naive Selection Sort Algorithm.
@@ -36,6 +36,6 @@ def naiveSelectionSort(lst):
 
 
 if __name__ == "__main__":
-    print(naiveSelectionSort([56, 27, 39, 4, 31, 56, 55, 27, 63, 74, 82, 77,
+    print(selectionSort([56, 27, 39, 4, 31, 56, 55, 27, 63, 74, 82, 77,
                               32, 32, 44]))
-    print(naiveSelectionSort([5, 4, 3, 2, 1]))
+    print(selectionSort([5, 4, 3, 2, 1]))

@@ -2,8 +2,6 @@
 
 There exist two types of algorithmic complexity:
 
-
-
 - **Time Complexity**: How much time does an algorithm spend solving a particular problem
 - **Space Complexity**: How much space does an algorithm spend solving a particular problem
 
@@ -55,7 +53,7 @@ i.e. **For all values of n, f(n) grows slower than or at the same rate as g(n)**
 
 #### Common function growth rates
 
-From shortest to longest, 
+From shortest to longest,
 
 - $O(1)$ : Constant Time
   - Functions that take a fixed amount of time to run, regardless of input size

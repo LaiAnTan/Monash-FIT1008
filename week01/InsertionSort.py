@@ -1,6 +1,6 @@
 
-# this should use slides implementation later
-def naiveInsertionSort(lst):
+# this does not use slides implementation lol
+def insertionSort(lst):
 
     """
     Naive Insertion Sort Algorithm.
@@ -23,6 +23,6 @@ def naiveInsertionSort(lst):
 
 
 if __name__ == "__main__":
-    print(naiveInsertionSort([56, 27, 39, 4, 31, 56, 55, 27, 63, 74, 82, 77,
+    print(insertionSort([56, 27, 39, 4, 31, 56, 55, 27, 63, 74, 82, 77,
                               32, 32, 44]))
-    print(naiveInsertionSort([5, 4, 3, 2, 1]))
+    print(insertionSort([5, 4, 3, 2, 1]))
