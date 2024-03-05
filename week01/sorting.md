@@ -36,7 +36,7 @@ For a singular iteration,
 2. Compare elements in position $i$ and $i + 1$
 3. Swap $i + 1$ if $i \gt i + 1$
 4. Increment $i$ by 1
-5. Repeat 1 to 4 until $i = length(list)$
+5. Repeat 1 to 4 until $i = length(list) - 1$
 
 Repeat until list is sorted or iterated $length(list) - 1$ times.
 

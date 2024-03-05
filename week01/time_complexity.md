@@ -42,7 +42,9 @@ The letter $O$ is used because the growth rate is also known as the order of the
 
 Assume two functions, $f(n)$ and $g(n)$ defined on $n \in \mathbb{N}$.
 
-$$f(n) = O(g(n))$$ if there are two positive constants $n_0$ and $c$ such that:
+$$f(n) = O(g(n))$$
+
+if there are two positive constants $n_0$ and $c$ such that:
 
 For all $n \geq n_0$ ,
 $$0 \leq f(n) \leq c \times g(n)$$
@@ -111,12 +113,12 @@ Since $4n^2$ dominates other components, the big O notation is $O(n^2)$ (We do n
 ```python
 def func0(input_of_size_n):
     for i in range(n):
-    ... # constant time operations
-    a = b + 2
-    ... # constant time operations
-    for j in range(100):
-        res += func1(res)
-    res -= func2(res)
+      ... # constant time operations
+      a = b + 2
+      ... # constant time operations
+      for j in range(100):
+          res += func1(res)
+      res -= func2(res)
 
 def func1(something):
     ... # assume O(n)
