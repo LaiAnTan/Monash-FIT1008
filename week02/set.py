@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import TypeVar, Generic
 from abc import ABC, abstractmethod
 
-from ref_array import ArrayR
+from assets.ref_array import ArrayR
 
 T = TypeVar('T')
 
