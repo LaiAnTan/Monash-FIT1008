@@ -24,12 +24,16 @@ For example:
 ## Other operations
 
 - peek: look at item at the top of the stack
-- length: size of stack
+- length: number of items in stack
 - full: if the stack is full
 - empty: if the stack is empty
 - clear: clear all items from the stack
 
 ## Implementation
+
+First, we implement the [abstract base class for a generic stack ADT](generic_stack.py).
+
+We can use [fixed-sized arrays](array_stack.py) to implement stacks.
 
 We can use [fixed-sized arrays to implement stacks](stack.py).
 

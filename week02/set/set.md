@@ -24,13 +24,15 @@ Set operations can be performed on these sets, such as:
 
 ## Other operations
 
-- length: size of a the set
+- length: number of items in set
 - empty: if the set is empty
 - clear: clear all items from the set
 
 ## Implementation
 
-We can use [fixed-sized arrays or bit vectors to implement stacks](setpy).
+First, we implement the [abstract base class for a generic set ADT](generic_set.py).
+
+We can use [fixed-sized arrays](array_set.py) or [bit vectors](bit_vector_set.py) to implement sets.
 
 > Bit Vector implementation of a set is basically just a string of 0s and 1s, with 0 indicating absence and 1 indicating presence of a particular element.
 
