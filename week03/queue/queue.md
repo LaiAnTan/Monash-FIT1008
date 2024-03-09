@@ -34,9 +34,14 @@ A [linear queue](linear_queue.py) is the naive implementation of a queue using f
 
 A [circular queue](circular_queue.py) is an improvement to the linear queue.
 
+We can also use nodes to implement queue, a.k.a [Linked Queue](/week05/linked_queue/).
+
+
 ### Downfalls of the linear queue
 
+Linear queue wastes a lot of space, particularly at the front of the inner array, as it does not shift elements to the front when an item is served. Therefore, not all spaces in the array are utilised.
 
+A circular queue is a variant of a linear queue that aims to address this issue, by allowing the front and rear of the queue to wrap around the inner array. (i.e. after all items have been filled at the back we wrap around to the front of the array)
 
 ## Common use cases
 

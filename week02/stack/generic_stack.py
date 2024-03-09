@@ -55,4 +55,9 @@ class Stack(ABC, Generic[T]):
         pass
 
     def clear(self) -> None:
+        """
+        Clears the stack.
+
+        :Complexity: O(1)
+        """
         self.length = 0

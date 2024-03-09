@@ -1,5 +1,10 @@
 from __future__ import annotations
 
+# for path to import assets
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
 from generic_queue import Queue, T
 from assets.ref_array import ArrayR
 

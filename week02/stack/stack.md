@@ -37,6 +37,8 @@ We can use [fixed-sized arrays](array_stack.py) to implement stacks.
 
 We can use [fixed-sized arrays to implement stacks](stack.py).
 
+We can also use nodes to implement stacks, a.k.a [Linked Stack](/week05/linked_stack/).
+
 ## Common use cases
 
 - Reversing a sequence

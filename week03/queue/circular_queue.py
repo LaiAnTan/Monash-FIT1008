@@ -106,14 +106,16 @@ class CircularQueue(Queue[T]):
         """
 
         index = self.front
+
+        s = "["
         items = "" 
 
         for _ in range(len(self)):
 
-            items += str(self.array[index])
+            s += str(self.array[index]) + (", " if _ != len(self) - 1 else "")
             index = (index + 1) % len(self.array)
 
-        return '[' + ", ".join(list(items)) + ']'
+        return s + ']'
     
 if __name__ == "__main__":
 

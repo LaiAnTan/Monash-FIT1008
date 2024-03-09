@@ -1,5 +1,9 @@
 from __future__ import annotations
-from typing import TypeVar
+
+# for path to import assets
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from generic_stack import Stack, T
 from assets.ref_array import ArrayR
@@ -21,14 +25,6 @@ class ArrayStack(Stack[T]):
         """
         super().__init__()
         self.array = ArrayR(max(self.MIN_CAPACITY, max_capacity))
-
-    def is_full(self) -> bool:
-        """
-        Returns True if the ArrayStack is full.
-
-        :Complexity: O(1)
-        """
-        return len(self) == len(self.array)
 
     def push(self, item: T) -> None:
         """
@@ -68,3 +64,37 @@ class ArrayStack(Stack[T]):
             raise Exception("Stack is empty")
 
         return self.array[self.length - 1]
+
+    def __len__(self) -> T:
+        """
+        Returns the length of the stack.
+
+        :Complexity: O(1)
+        """
+
+        return self.length
+
+    def is_empty(self) -> bool:
+        """
+        Returns True if the stack is empty.
+
+        :Complexity: O(1)
+        """
+
+        return len(self) == 0
+
+    def is_full(self) -> bool:
+        """
+        Returns True if the ArrayStack is full.
+
+        :Complexity: O(1)
+        """
+        return len(self) == len(self.array)
+
+    def clear(self) -> None:
+        """
+        Clears the stack.
+
+        :Complexity: O(1)
+        """
+        self.length = 0
