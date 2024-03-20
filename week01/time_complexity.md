@@ -132,3 +132,7 @@ Total Time complexity:
 $$O(n) \times (O(1) + O(n) + O(2^n))$$
 $$O(n) \times  O(2^n)$$
 $$O(n\;2^n)$$
+
+> The best case time complexity of a function refers to the minimum time it takes to run for an input of **any** size.
+>  
+> Common Mistake: best case is O(1) because that is when the list is empty (NO)

@@ -61,13 +61,7 @@ class ArrayList(List[T]):
         """
 
         if len(self) == len(self.array):
-
-            new_array = ArrayR(self.__newsize())
-
-            for i in range(len(self)):
-                new_array[i] = self.array[i]
-
-            self.array = new_array
+            self.__resize()
 
         for i in range(len(self) - 1, index, -1):
             self.array[i + 1] = self.array[i]
@@ -113,6 +107,18 @@ class ArrayList(List[T]):
         12% per resize.
         """
         return self.length + (self.length >> 3) + (3 if self.length < 9 else 6)
+
+    def __resize(self) -> None:
+        """
+        Resizes the array to a new size using __newsize.
+        """
+
+        new_array = ArrayR(self.__newsize())
+
+        for i in range(len(self)):
+            new_array[i] = self.array[i]
+
+        self.array = new_array
 
     def __len__(self) -> int:
         """
