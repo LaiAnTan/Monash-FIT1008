@@ -32,3 +32,16 @@ However, the implementation and time complexities of the operations will be diff
 ## Implementation
 
 [Linked list implementation](linked_list.py).
+
+## Linked List vs Array List
+
+Use linked list when:
+
+- unknown number of items to store
+- many insertions and deletions required in the middle of the array
+
+Use array list when:
+
+- known number of items to store
+- many random access
+- need to search elements

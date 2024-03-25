@@ -35,8 +35,6 @@ First, we implement the [abstract base class for a generic stack ADT](generic_st
 
 We can use [fixed-sized arrays](array_stack.py) to implement stacks.
 
-We can use [fixed-sized arrays to implement stacks](stack.py).
-
 We can also use nodes to implement stacks, a.k.a [Linked Stack](/week05/linked_stack/).
 
 ## Common use cases
@@ -46,4 +44,4 @@ We can also use nodes to implement stacks, a.k.a [Linked Stack](/week05/linked_s
 1. Create a stack with a max capacity the length of the sequence
 2. Traverse the sequence, pushing each item onto the stack
 3. Initialise the return container.
-4. Pop each elemnt from the stack and insert it into the container.
+4. Pop each element from the stack and insert it into the container.

@@ -28,22 +28,29 @@ Notes and implementations of algorithms and data structures taught in this unit.
 [Week 3](/week03/)
 
 - [Queue](/week03/queue/queue.md)
-  - [Implementations of Queue](/week03/queue.py)
+  - [Abstract Base Class for a Generic Queue](/week03/queue/generic_queue.py)
+  - [Implementation of Linear Queue with Fixed-sized Arrays](/week03/queue/linear_queue.py)
+  - [Implementation of Circular Queue with Fixed-sized Arrays](/week03/queue/circular_queue.py)
 - [List](/week03/list/list.md)
-  - [Implementation of List](/week03/list.py)
+  - [Abstract Base Class for a Generic List](/week03/list/generic_list.py)
+  - [Implementation of List with Fixed-sized Arrays](/week03/list/array_list.py)
 
 [Week 4](/week04/)
 
-- [Sorted List](/week04/sorted_list.md)
-  - [Implementations of Sorted List](/week04/sorted_list.py)
-- [Linked List](/week04/linked_list.md)
-  - [Implementation of Linked List](/week04/linked_list.py)
+- [Sorted List](/week04/sorted_list/sorted_list.md)
+  - [Abstract Base Class for a Generic Sorted List](/week04/sorted_list/sorted_list/generic_sorted_list.py)
+  - [Implementation of Sorted List with Fixed-sized Arrays](/week04/sorted_list/sarray_sorted_list.py)
+- [Linked List](/week04/linked_list/linked_list.md)
+  - [Implementation of Linked List](/week04/linked_list/linked_list.py)
 
 [Week 5](/week05/)
 
-- [Linked Stack]
-- [Linked Queue]
-- [Iterators]
+- [Iterators](/week05/iterators.md)
+  - [Implementation of Iterator for a Linked List](/week05/linked_list_iterator/linked_list_iterator.py)
+- [Linked Stack](/week05/linked_stack/linked_stack.md)
+  - [Implementation of Linked Stack](/week05/linked_stack/linked_stack.py)
+- [Linked Queue](/week05/linked_queue/linked_queue.py)
+  - [Implementation of Linked Queue](/week05/linked_queue/linked_queue.py)
 
 [Week 6](/week06/)
 
