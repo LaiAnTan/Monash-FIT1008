@@ -1,16 +1,15 @@
 from __future__ import annotations
+from generic_queue import Queue, T
+from assets.ref_array import ArrayR
 
 # for path to import assets
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from generic_queue import Queue, T
-from assets.ref_array import ArrayR
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 
 class LinearQueue(Queue[T]):
-
     """
     Fixed-sized Array implementation of Generic Queue ADT.
     """
@@ -37,7 +36,7 @@ class LinearQueue(Queue[T]):
 
         if self.is_full():
             raise Exception("Queue is full")
-        
+
         self.array[self.rear] = item
         self.length += 1
         self.rear += 1
@@ -52,7 +51,7 @@ class LinearQueue(Queue[T]):
 
         if self.is_empty():
             raise Exception("Queue is empty")
-        
+
         self.length -= 1
         item = self.array[self.front]
         self.front += 1
@@ -92,18 +91,18 @@ class LinearQueue(Queue[T]):
         :Complexity: O(1)
         """
         super().__init__(self)
-        self.front =  0
+        self.front = 0
         self.rear = 0
 
     def resize(self) -> None:
-
         """
         Naive resize method implementation for a linear queue.
 
         Doubles the inner array's capacity when called.
         While copying, removes the unused space at the front of the array.
 
-        :Complexity: O(n) * O(n * 2) = O(n^2) , where n is the length of the queue
+        :Complexity: O(n) * O(n * 2) = O(n^2) , where n is the length of the
+            queue
         """
 
         new_array = ArrayR(len(self.array) * 2)

@@ -54,10 +54,7 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 [Week 6](/week06/)
 
-- [Dictionary]
-- [Hash Functions]
-- [Hash Tables]
-- [Collision Resolution]
+- [Hash Table, Hash Function, Collision Resolution](/week06/hash_table.md)
 
 [Week 7](/week07/)
 

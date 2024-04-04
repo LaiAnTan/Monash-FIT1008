@@ -3,14 +3,15 @@ from __future__ import annotations
 # for path to import assets
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from generic_queue import Queue, T
+
 from assets.ref_array import ArrayR
+
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 
 class CircularQueue(Queue[T]):
-
     """
     Fixed-sized Array implementation of Generic Queue ADT.
     An improved version of LinearQueue.
@@ -38,7 +39,7 @@ class CircularQueue(Queue[T]):
 
         if self.is_full():
             raise Exception("Queue is full")
-        
+
         self.array[self.rear] = item
         self.length += 1
         # wrap to front if necessary
@@ -54,11 +55,11 @@ class CircularQueue(Queue[T]):
 
         if self.is_empty():
             raise Exception("Queue is empty")
-        
+
         self.length -= 1
         item = self.array[self.front]
         # wrap to front if necessary
-        self.front = (self.front + 1) % len(self.array) 
+        self.front = (self.front + 1) % len(self.array)
         return item
 
     def __len__(self) -> T:
@@ -95,7 +96,7 @@ class CircularQueue(Queue[T]):
         :Complexity: O(1)
         """
         super().__init__(self)
-        self.front =  0
+        self.front = 0
         self.rear = 0
 
     def __str__(self) -> str:
@@ -108,15 +109,15 @@ class CircularQueue(Queue[T]):
         index = self.front
 
         s = "["
-        items = "" 
 
         for _ in range(len(self)):
 
             s += str(self.array[index]) + (", " if _ != len(self) - 1 else "")
             index = (index + 1) % len(self.array)
 
-        return s + ']'
-    
+        return s + "]"
+
+
 if __name__ == "__main__":
 
     q = CircularQueue(3)

@@ -14,8 +14,8 @@ Front of the queue <- 1 3 4 2 5 <- Back of the queue
 
 ## Main operations
 
-- append: add an item to the back of the queue
-- serve: take an item off the front of the queue
+- append: add an item to the back of the queue (enqueue)
+- serve: take an item off the front of the queue (dequeue)
 
 ## Other operations
 

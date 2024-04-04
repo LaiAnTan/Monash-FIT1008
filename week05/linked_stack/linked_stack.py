@@ -75,4 +75,3 @@ class LinkedStack(Stack[T]):
         self.length -= 1
 
         return item
-

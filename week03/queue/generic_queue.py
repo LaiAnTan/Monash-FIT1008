@@ -2,11 +2,10 @@ from __future__ import annotations
 from typing import TypeVar, Generic
 from abc import ABC, abstractmethod
 
-T = TypeVar('T')
+T = TypeVar("T")
 
 
 class Queue(ABC, Generic[T]):
-
     """
     Abstract Base Class for Generic Queue ADT that contains type T
     """
@@ -45,7 +44,6 @@ class Queue(ABC, Generic[T]):
         """
 
         return len(self) == 0
-
 
     @abstractmethod
     def is_full(self) -> bool:
