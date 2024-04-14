@@ -7,7 +7,9 @@ def naiveBubbleSort(lst):
     Sorts elements by swapping the position of two elements if they are in the
     wrong order.
 
-    :complexity: O(n ^ 2)
+    :param lst: list to be sorted.
+    :return lst: the sorted list.
+    :complexity:  Best-case O(n^2), Worst-case O(n^2)
     """
 
     for _ in range(len(lst) - 1):
@@ -33,6 +35,10 @@ def optimisedBubbleSort(lst):
     2. Breaks out of the loop if no elements were swapped, as we can infer that
     the list is sorted if no elements' positions' changed in a single
     iteration.
+    
+    :param lst: list to be sorted.
+    :return lst: the sorted list.
+    :complexity:  Best-case O(n), Worst-case O(n^2)
     """
 
     for i in range(len(lst) - 1):

@@ -39,7 +39,7 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 - [Sorted List](/week04/sorted_list/sorted_list.md)
   - [Abstract Base Class for a Generic Sorted List](/week04/sorted_list/sorted_list/generic_sorted_list.py)
-  - [Implementation of Sorted List with Fixed-sized Arrays](/week04/sorted_list/sarray_sorted_list.py)
+  - [Implementation of Sorted List with Fixed-sized Arrays](/week04/sorted_list/array_sorted_list.py)
 - [Linked List](/week04/linked_list/linked_list.md)
   - [Implementation of Linked List](/week04/linked_list/linked_list.py)
 

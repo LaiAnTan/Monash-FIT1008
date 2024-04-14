@@ -91,7 +91,7 @@ Refer [here](/week01/SelectionSort.py).
 
 #### Selection Sort Incrementality
 
-Selection sort is not incremental.
+Selection sort is not incremental as it has to do all the work again after introducing a small change to return the list to its sorted position.
 
 #### Selection Sort Stability
 

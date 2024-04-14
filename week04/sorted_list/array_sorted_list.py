@@ -43,7 +43,7 @@ class ArraySortedList(SortedList[T]):
 
         :raise ValueError: if the item is not found
         :Complexity:
-            let n be the size of the list
+            let n be the number of elements in the list
             let m be the comparisons made in the function
             Best-case: O(m) when the item is in the first index
             Worst-case: O(n * m) when the item is in the last index
@@ -67,10 +67,9 @@ class ArraySortedList(SortedList[T]):
 
         :raise ValueError: if the item is not found
         :Complexity:
-            let n be the number of iterations of the while loop
-            let m be the
-            Best-case: O(m) when the item is in the middle
-            Worst-case: O(m log n) when the item is in the extrema
+            let n be the number of elements in the list
+            Best-case: O(1) when the item is in the middle
+            Worst-case: O(log n) when the item is in the extrema
         """
         low = 0
         high = len(self) - 1

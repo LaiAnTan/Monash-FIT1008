@@ -19,7 +19,9 @@ def selectionSort(lst):
     """
     Naive Selection Sort Algorithm.
 
-    Sorts elements by locating the minimum of
+    Sorts elements by locating the minimum element in a subarray of
+    (i + 1 to len(lst) - 1), then swapping the
+    positions of the current element (i) with the minimum.
 
     :param lst: list to be sorted.
     :return lst: the sorted list.

@@ -7,6 +7,10 @@ def insertionSort(lst):
 
     Sorts the elements by shifting elements to the left until they reach their
     correct positions in a sorted list.
+    
+    :param lst: list to be sorted.
+    :return lst: the sorted list.
+    :complexity: Best-case O(n), Worst-case O(n^2)
     """
 
     for i in range(len(lst)):
