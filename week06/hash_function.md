@@ -13,6 +13,12 @@ There exists various techiniques that can be applied to handle collision (collis
 - seperate chaining
 - open addressing
 
+## Conflict
+
+A conflict occurs when a when a position in the hash table we attempt to use for a given key is already occupied.
+
+A collision usually causes a conflict.
+
 ## Properties of a Hash Function
 
 Therefore, the hash function must have these properties:
