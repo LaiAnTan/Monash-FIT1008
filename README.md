@@ -54,13 +54,16 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 [Week 6](/week06/)
 
-- [Hash Table](/week06/hash_table.md)
-- [Hash Function](/week06/hash_function.md)
-- [Seperate Chaining](/week06/seperate_chaining.md)
+- [Hash Table](/week06/hash_table/hash_table.md)
+  - [Abstract Base Class for a Generic Hash Table](/week06/hash_table/generic_hash_table.py)
+- [Hash Function](/week06/hash_table/hash_function.md)
+- [Seperate Chaining](/week06/hash_table/seperate_chaining.md)
+  - [Implementation of Hash Table with Seperate Chaining Collision Resolution](/week06/hash_table/seperate_chaining_table.py)
 
 [Week 7](/week07/)
 
 - [Open Addressing]
+  - [Linear Probing]
 
 [Week 8](/week08/)
 
