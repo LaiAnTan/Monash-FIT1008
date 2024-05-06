@@ -60,19 +60,20 @@ Notes and implementations of algorithms and data structures taught in this unit.
 - [Seperate Chaining](/week06/hash_table/seperate_chaining.md)
   - [Implementation of Hash Table with Seperate Chaining Collision Resolution](/week06/hash_table/seperate_chaining_table.py)
 
-[Week 7](/week07/)
+[Week 7](/week07/) not done lol
 
 - [Open Addressing]
   - [Linear Probing]
 
 [Week 8](/week08/)
 
-- [Recursion]
+- [Recursion](/week08/recursion.md) Not done lol
 
 [Week 9](/week09/)
 
-- [Quick Sort]
-- [Merge Sort]
+- [Recursive Sorting Algorithms](/week09/recursive_sorts.md)
+  - [Merge Sort](/week09/merge_sort.py)
+  - [Quick Sort](/week09/quick_sort.py)
 
 [Week 10](/week10/)
 
