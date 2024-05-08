@@ -12,3 +12,5 @@ In the main class, we can then define `__iter__` that returns the iterator class
 This allows us to traverse linked lists and the like without accessing the internals (i.e. self.next)
 
 An object that can be iterated on is called an iterable.
+
+The `StopIteration` exception should be raised when there are no more elements to iterate through in the collection.

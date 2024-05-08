@@ -72,7 +72,7 @@ class LinkedQueue(Queue[T]):
         if self.is_empty():
             raise ValueError("Queue is empty")
 
-        item = self.front
+        item = self.front.item
         self.front = self.front.next
         self.length -= 1
 

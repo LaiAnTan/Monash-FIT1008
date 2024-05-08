@@ -67,7 +67,7 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 [Week 8](/week08/)
 
-- [Recursion](/week08/recursion.md) Not done lol
+- [Recursion](/week08/recursion.md)
 
 [Week 9](/week09/)
 

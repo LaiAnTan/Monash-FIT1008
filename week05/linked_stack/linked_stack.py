@@ -69,7 +69,7 @@ class LinkedStack(Stack[T]):
         if self.is_empty() is True:
             raise ValueError("Stack is empty")
 
-        item = self.top
+        item = self.top.item
 
         self.top = self.top.next
         self.length -= 1

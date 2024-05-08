@@ -28,13 +28,22 @@ The easy part of merge sort is the splitting of lists, while the more difficult 
 
 ### Time Complexity of Merge Sort
 
- Time complexity of Merge Sort: `O((n log n)) * comp` for Best / Worst-case, where n is the number of elements in the array and comp is the time complexity of the comparisons.
+ Time complexity of Merge Sort: `O((n log n) * comp)` for Best / Worst-case, where n is the number of elements in the array and comp is the time complexity of the comparisons.
 
 This is because we keep performing recursion with halves of a list (// 2), therefore the total recursive depth is (log n), where we do n number of operations at each depth.
 
 ### Implementation of Merge Sort
 
 Merge sort implementation(s) [here](/week09/merge_sort.py).
+
+Interesting observations:
+
+- mergesort will be called $2n - 1$ times ($2n - 2$ if the main call does not count)
+- merge will be called $n - 1$ times
+
+### Stability of Merge Sort
+
+Merge sort is stable.
 
 ## Quick Sort
 
@@ -104,3 +113,12 @@ From wikipeda:
 > In this scheme, **the pivot's final location is not necessarily at the index that is returned**, as the pivot and elements equal to the pivot can end up anywhere within the partition after a partition step, and may not be sorted until the base case of a partition with a single element is reached via recursion. Therefore, the next two segments that the main algorithm recurse on are (elements ≤ pivot) and (elements ≥ pivot) as opposed to (start..pivot - 1) and (pivot + 1..end) as in Lomuto's scheme.
 
 Further reading [here](https://stackoverflow.com/questions/7198121/quicksort-and-hoare-partition).
+
+### Advantages of Quick Sort over Merge Sort
+
+Quick Sort does not need to copy the elements back like Merge Sort.
+Thus, Quick Sort has a smaller constant than Merge Sort (if a good pivot is chosen).
+
+### Stability of Quick Sort
+
+Quick Sort is an unstable sorting algorithm.
