@@ -1,13 +1,14 @@
 from __future__ import annotations
 from typing import Generic
-from generic_hash_table import HashTable, K, V
-from assets.ref_array import ArrayR
 
 # for path to import assets
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parents[2]))
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from hash_table.generic_hash_table import HashTable, K, V
+from assets.ref_array import ArrayR
 
 
 class Node(Generic[K, V]):

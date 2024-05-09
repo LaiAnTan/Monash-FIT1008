@@ -57,13 +57,13 @@ Notes and implementations of algorithms and data structures taught in this unit.
 - [Hash Table](/week06/hash_table/hash_table.md)
   - [Abstract Base Class for a Generic Hash Table](/week06/hash_table/generic_hash_table.py)
 - [Hash Function](/week06/hash_table/hash_function.md)
-- [Seperate Chaining](/week06/hash_table/seperate_chaining.md)
-  - [Implementation of Hash Table with Seperate Chaining Collision Resolution](/week06/hash_table/seperate_chaining_table.py)
+- [Seperate Chaining](/week06/seperate_chaining_table/seperate_chaining.md)
+  - [Implementation of Hash Table with Seperate Chaining Collision Resolution](/week06/seperate_chaining_table/seperate_chaining_table.py)
 
-[Week 7](/week07/) not done lol
+[Week 7](/week07/)
 
-- [Open Addressing]
-  - [Linear Probing]
+- [Linear Probing](/week07/linear_probe_table/linear_probe.md)
+  - [Implementation of Hash Table with Linear Probing Collision Resolution](/week07/linear_probe_table/linear_probe_table.py)
 
 [Week 8](/week08/)
 
@@ -77,12 +77,14 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 [Week 10](/week10/)
 
-- [Binary Tree]
+- [Trees]
+- [Binary Trees]
+- [Binary Search Trees]
 
 [Week 11](/week11/)
 
 - [Priority Queue]
-- [Heap]
+- [Binary Heaps]
 
 [Week 12](/week12/)
 

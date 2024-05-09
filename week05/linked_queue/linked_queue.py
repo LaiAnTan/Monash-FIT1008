@@ -59,7 +59,7 @@ class LinkedQueue(Queue[T]):
             self.front = new
         else:
             self.rear.next = new
-        self.rear = new
+        self.rear = new # rear points to new no matter what
         self.length += 1
 
     def serve(self) -> T:
