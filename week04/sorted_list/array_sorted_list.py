@@ -1,13 +1,16 @@
 from __future__ import annotations
-from generic_sorted_list import SortedList, T
-from assets.ref_array import ArrayR
+
 
 # for path to import assets
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parents[2]))
+if __name__ == "__main__":
+    sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from week04.sorted_list.generic_sorted_list import SortedList, T
+from week03.list.array_list import ArrayListIterator
+from assets.ref_array import ArrayR
 
 class ArraySortedList(SortedList[T]):
 
@@ -27,8 +30,17 @@ class ArraySortedList(SortedList[T]):
 
     def delete(self, index: int) -> T:
 
-        for i in range(index, len(self)):
+        if index < 0 or index >= len(self):
+            raise IndexError("Index out of bounds")
+
+        item = self.array[index]
+
+        for i in range(index, len(self) - 1):
             self.array[i] = self.array[i + 1]
+
+        self.length -= 1
+
+        return item
 
     def index(self, item: T) -> int:
         """
@@ -169,6 +181,24 @@ class ArraySortedList(SortedList[T]):
                 return mid
 
         return low
+    
+    def __str__(self) -> str:
+        """
+        Returns the string representation of the list.
+
+        :Complexity: O(n) where n is the length of the list.
+        """
+
+        s = "["
+
+        for i in range(len(self)):
+
+            s += str(self.array[i]) + (", " if i != len(self) - 1 else "")
+
+        return s + ']'
+    
+    def __iter__(self):
+        return ArrayListIterator(self)
 
 
 if __name__ == "__main__":

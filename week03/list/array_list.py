@@ -3,9 +3,11 @@ from __future__ import annotations
 # for path to import assets
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from generic_list import List, T
+if __name__ == "__main__":
+    sys.path.append(str(Path(__file__).resolve().parents[2]))
+
+from week03.list.generic_list import List, T
 from assets.ref_array import ArrayR
 
 class ArrayList(List[T]):
@@ -59,12 +61,15 @@ class ArrayList(List[T]):
 
         :Complexity: O(n) where n is the length of the list
         """
+        
+        if index < 0 or index > len(self):
+            raise IndexError("Index out of bounds")
 
         if len(self) == len(self.array):
             self.__resize()
 
-        for i in range(len(self) - 1, index, -1):
-            self.array[i + 1] = self.array[i]
+        for i in range(len(self), index, -1):
+            self.array[i] = self.array[i - 1]
 
         self.array[index] = item
         self.length += 1
@@ -161,6 +166,30 @@ class ArrayList(List[T]):
             s += str(self.array[i]) + (", " if i != len(self) - 1 else "")
 
         return s + ']'
+    
+    def __iter__(self) -> None:
+        return ArrayListIterator(self)
+
+class ArrayListIterator:
+    
+    def __init__(self, list: ArrayList) -> None:
+        self.list = list
+        self.index = 0
+    
+    def __iter__(self) -> ArrayListIterator:
+        return self
+    
+    def __next__(self):
+        
+        item = self.list[self.index]
+        
+        if item is None:
+            raise StopIteration
+        
+        self.index += 1
+        
+        return item
+        
 
 if __name__ == "__main__":
 
@@ -176,4 +205,5 @@ if __name__ == "__main__":
     l.insert(5, 199)
     print(l)
 
-
+    for elem in l:
+        print(elem)

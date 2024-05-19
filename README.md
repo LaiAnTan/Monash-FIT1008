@@ -77,16 +77,15 @@ Notes and implementations of algorithms and data structures taught in this unit.
 
 [Week 10](/week10/)
 
-- [Trees]
-- [Binary Trees]
-- [Binary Search Trees]
+- [Trees](/week10/trees.md)
+- [Binary Trees](/week10/binary_tree/binary_trees.md)
+  - [Implementation of a Generic Binary Tree](/week10/binary_tree/generic_binary_tree.py)
+- [Binary Search Trees](/week10/binary_search_tree/binary_search_trees.md)
+  - [Implementation of a Binary Search Tree](/week10/binary_search_tree/binary_search_tree.py)
 
 [Week 11](/week11/)
 
 - [Priority Queue]
-- [Binary Heaps]
+  - [Heap]
 
-[Week 12](/week12/)
-
-- [Rabin-Karp Algorithm]
-- [Huffman Tree]
+- [Heapsort]

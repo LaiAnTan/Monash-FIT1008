@@ -4,7 +4,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+if __name__ == "__main__":
+    sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from typing import TypeVar, Generic, List
 
@@ -102,7 +103,6 @@ class BinarySearchTree(Generic[K, I]):
             N is the number of nodes in the tree.
         """
         
-        
         if current.link is None:
             current = BinarySearchTreeNode(key, item)
         elif key < current.key:
@@ -115,7 +115,7 @@ class BinarySearchTree(Generic[K, I]):
         return current
 
     def __delitem__(self, key: K) -> None:
-        self.delitem_aux(self.root, key)
+        self.root = self.delitem_aux(self.root, key)
     
     def delitem_aux(self, current: BinarySearchTreeNode[K, I], key: K) -> BinarySearchTreeNode[K, I]:
         """
@@ -192,6 +192,29 @@ class BinarySearchTree(Generic[K, I]):
     
     def __iter__(self):
         return InOrderIterator(self)
+    
+    def draw(self, to=sys.stdout):
+        """
+        Draw the tree in the terminal. 
+        I did not make this
+        """
+
+        # get the nodes of the graph to draw recursively
+        self.draw_aux(self.root, prefix='', final='', to=to)
+
+    def draw_aux(self, current: BinarySearchTreeNode, prefix='', final='', to=sys.stdout) -> K:
+        """ Draw a node and then its children. """
+
+        if current is not None:
+            real_prefix = prefix[:-2] + final
+            print('{0}{1}'.format(real_prefix, str(current.key)), file=to)
+
+            if current.left or current.right:
+                self.draw_aux(current.left,  prefix=prefix + '\u2551 ', final='\u255f\u2500', to=to)
+                self.draw_aux(current.right, prefix=prefix + '  ', final='\u2559\u2500', to=to)
+        else:
+            real_prefix = prefix[:-2] + final
+            print('{0}'.format(real_prefix), file=to)
 
 class PreOrderIterator():
     
