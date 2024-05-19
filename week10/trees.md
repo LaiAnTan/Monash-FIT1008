@@ -1,6 +1,15 @@
 # Trees
 
+## Mathematical Definition
+
 A connected graph that does not contain a cycle (acyclic).
+
+## CS Definition
+
+Rooted trees - one node is marked as the root
+
+- edges are directional (parent -> child)
+- sibling nodes might have order (left to right)
 
 ## Tree Notation
 
@@ -21,7 +30,7 @@ Edges in a tree connect nodes to one another.
 
 A **parent node** is connected to a **child node** by an edge.
 
-### Parth
+### Path
 
 A **path** is the sequence of edges from one node to another.
 
@@ -35,6 +44,14 @@ Subtrees can vary, ranging from a single node to the whole original tree itself 
 
 ### Depth
 
+The depth of a node is the distance (length of path) of said node from the root
 
+The depth / height of a tree is the max length of a path from the root.
+
+Nodes in the same level have the same depth.
+
+> level and depth can be used interchangably.
 
 ### Width
+
+The number of nodes in the level with most nodes.

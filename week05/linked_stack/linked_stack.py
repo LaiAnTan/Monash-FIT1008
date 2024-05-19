@@ -75,3 +75,9 @@ class LinkedStack(Stack[T]):
         self.length -= 1
 
         return item
+    
+    def peek(self) -> T:
+        """
+        Returns the item on top of the stack without popping it.
+        """
+        return self.top

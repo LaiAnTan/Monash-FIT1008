@@ -14,3 +14,5 @@ This allows us to traverse linked lists and the like without accessing the inter
 An object that can be iterated on is called an iterable.
 
 The `StopIteration` exception should be raised when there are no more elements to iterate through in the collection.
+
+When we try to iterate using an iterator that has already had its collection of values exhausted and already has raised `StopIteration`, `StopIteration` will be raised indefinitely for every call of `next()` on the iterator.

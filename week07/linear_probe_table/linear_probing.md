@@ -6,15 +6,32 @@ Linear Probing is a form of open addressing, which is a method used to resolve c
 
 ### Add
 
+The time complexity of adding an item to a linear probe table is as follows:
+
+Best case: O(hash)
+Worst case: O(hash + n)
+
 ### Search
+
+The time complexity of searching for an item in a linear probe table is as follows:
+
+Best case: O(hash)
+Worst case: O(hash + n)
 
 ### Delete
 
+The time complexity of deleting an item from a linear probe table is as follows:
+
+Best case: O(hash)
+Worst case: O(n * hash + n^2)
+
 #### Rehashing
+
+#### Alternative: Lazy Deletion
 
 ## Clustering in Linear Probe Table
 
-A cluster is a sequential set of elements in a hash table.
+A cluster is a sequential set of full spots in a hash table.
 
 Once a cluster forms, it tends to grow larger as more elements are inserted.
 
@@ -26,7 +43,7 @@ Clustering also causes deleting an element in the hash table to be slower as we 
 
 ## Load Factor consideration in Linear Probe Table
 
-In a linear probe table, the load factor must be kept under 1/2 or at least 2/3.
+In a linear probe table, the load factor must be kept under $\frac{1}{2}$ or at least $\frac{2}{3}$.
 
 This is because for hash tables with load factor > 0.5, there is a higher tendency for clustering to occur.
 
