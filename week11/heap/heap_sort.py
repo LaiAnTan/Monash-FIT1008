@@ -21,7 +21,7 @@ def heap_sort(arr: ArrayR):
     
     # O(N log N)
     for i in range(len(arr) - 1, -1, -1):
-        arr[i] = heap.get_max()                                                                                                                                                                                                                                                                       
+        arr[i] = heap.get_max()
 
 if __name__ == "__main__":
     
