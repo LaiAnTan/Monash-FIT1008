@@ -9,3 +9,16 @@ A variant of a binary tree, which has two special properties:
 
 - heap-ordered: Each child is smaller than (or equal to) its parent
 
+## Implementations
+
+- Binary Tree (complex, extra memory needed)
+- Array
+
+## Heap sort
+
+In place sort using heaps.
+
+1. Build a heap using heapify O(N)
+2. get_max() from the heap N times O(N log(N))
+
+Time complexity: `O(N log (N))`, Space complexity: O(1)
