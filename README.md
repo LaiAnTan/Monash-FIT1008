@@ -86,7 +86,7 @@ Notes and implementations of algorithms and data structures taught in this unit.
 [Week 11](/week11/)
 
 - [Priority Queue](/week11/priority_queue/priority_queue.md)
-  - [Abstract Base Class for a Priority Queue]
+  - [Abstract Base Class for a Priority Queue](/week11/priority_queue/generic_priority_queue.py)
   - [Implementation of a Priority Queue with Unsorted / Sorted Lists](/week11/priority_queue/array_list_priority_queue.py)
   - [Implementation of Priority Queue with Binary Search Tree](/week11/priority_queue/binary_search_tree_priority_queue.py)
 - [Heap](/week11/heap/heap.md)
