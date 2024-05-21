@@ -57,7 +57,7 @@ class Heap(Generic[T]):
         while index > 1 and self.array[index] > self.array[index // 2]:
             self.array[index], self.array[index // 2] = self.array[index // 2], self.array[index]
             index = index // 2
-    
+
     def get_max(self) -> T:
         
         if self.length == 0:
@@ -71,7 +71,7 @@ class Heap(Generic[T]):
             self.sink(1)
         
         return max_elem
-    
+
     def sink(self, index: int) -> None:
         """
         Sink element at index to its correct position.
@@ -89,8 +89,7 @@ class Heap(Generic[T]):
             
             self.array[index], self.array[child] = self.array[child], self.array[index]
             index = child
-        
-    
+
     def largest_child(self, index: int) -> int:
         """
         Returns the index of the largest child of node at position index.

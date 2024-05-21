@@ -10,3 +10,12 @@ Advantages of BST:
 
 - good for searching and for inserting and deleting
 - can be traversed in particular orders
+
+## Tree sort
+
+Sorting using a BST.
+
+1. Insert all elements from the list into the BST
+2. Perform Inorder iteration through the BST to obtain sorted list.
+
+Time complexity: `O(N log (N))`

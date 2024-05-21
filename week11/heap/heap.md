@@ -9,6 +9,11 @@ A variant of a binary tree, which has two special properties:
 
 - heap-ordered: Each child is smaller than (or equal to) its parent
 
+## Types of heaps
+
+- min heap: minimum at the root of the binary tree
+- max heap: maximum at the root of the binary tree
+
 ## Implementations
 
 - Binary Tree (complex, extra memory needed)
