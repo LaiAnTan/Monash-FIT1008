@@ -21,6 +21,10 @@ let N be the number of nodes in the BST.
 | Insert          | O(1)                     | O(N)                      | O(log(N))              | O(log(N))               |
 | Delete          | O(1)                     | O(N)                      | O(log(N))              | O(log(N))               |
 
+Notes:
+
+Unbalanced BST Best Case insertion is O(1) when you insert an element into the other subtree with no nodes from the root.
+
 ## Tree sort
 
 Sorting using a BST.
@@ -28,4 +32,9 @@ Sorting using a BST.
 1. Insert all elements from the list into the BST
 2. Perform Inorder iteration through the BST to obtain sorted list.
 
-Time complexity: `O(N log (N))`
+Time complexity:
+
+let N be the number of elements to sort.
+
+Best-case: `O(N log (N))` when the insertion of elements into the BST produces a balanced BST.
+Worst-case: `O(N^2)` when the insertion of elements into the BST produces a totally unbalanced BST (degraded into a linked list).

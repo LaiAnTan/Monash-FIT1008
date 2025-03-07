@@ -129,10 +129,17 @@ if __name__ == "__main__":
     
     print(f"Max heap: {[maxheap.get_max() for _ in range(5)]}")
     
-    arr = ArrayR(10)
-    for i in range(10):
-        arr[i] = randint(1, 50)
+    i = 0
+    arr = ArrayR(9)
+    for i, e in enumerate([5, 2, 9, 7, 3, 4, 6, 8, 1]):
+        arr[i] = e
     
     heapified = Heap.heapify(arr)
     
-    print(f"Max heap: {[heapified.get_max() for _ in range(10)]}")
+    
+    for i in range(9):
+        print(f"Iteration {i}")
+        print(f"State: {heapified.array}")
+        print(f"get_max: {heapified.get_max()}")
+    
+    print(f"Final state: {heapified.array}")

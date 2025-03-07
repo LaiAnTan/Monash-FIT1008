@@ -19,6 +19,14 @@ A variant of a binary tree, which has two special properties:
 - Binary Tree (complex, extra memory needed)
 - Array
 
+### Array heap
+
+For the node at the $k$ th index in the array,
+
+its children (if any) are at the position of $2 * k$ and $2 * k + 1$.
+
+and its parent (if any) are at the position of $k\;//\;2$
+
 ## Heap sort
 
 In place sort using heaps.
